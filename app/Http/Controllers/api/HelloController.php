@@ -1,16 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\api;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class HelloWorldController extends Controller
+class HelloController extends Controller
 {
-    public function firstCode(){
-        return  ('Hello World');
-    }
-
-
     public function hello(Request $request):string
     {
         $name =$request->name;
@@ -18,6 +14,3 @@ class HelloWorldController extends Controller
 return "My Name Is= ${name} and my age is ${age} ";
     }
 }
-
-
-

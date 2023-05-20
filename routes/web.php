@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/hello/wold',[HelloWorldController::class,'firstCode']);
+Route::get('/hello/{name}/{age}',[HelloWorldController::class,'hello']);
 
