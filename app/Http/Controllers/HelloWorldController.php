@@ -11,11 +11,11 @@ class HelloWorldController extends Controller
     }
 
 
-    public function hello(Request $request):string
+    public function hello(Request $request)
     {
-        $name =$request->name;
-        $age =$request->age;
-return "My Name Is= ${name} and my age is ${age} ";
+        $name = $request->input('name');
+
+        
     }
 }
 

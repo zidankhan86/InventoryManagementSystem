@@ -10,7 +10,7 @@ class HelloController extends Controller
     public function hello(Request $request):string
     {
         $name =$request->name;
-        $age =$request->age;
-return "My Name Is= ${name} and my age is ${age} ";
+
+return "My Name Is ${name}  ";
     }
 }
